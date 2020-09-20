@@ -1,0 +1,7 @@
+1. Unzip the Lab2.zip.
+2. Open a command line/ terminal.
+3. Give following commands.
+	
+	cd Lab2
+	javac SenateBusProblem.java
+	java SenateBusProblem
