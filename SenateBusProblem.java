@@ -58,7 +58,8 @@ public class SenateBusProblem{
                 System.out.println("waiting  : " + waiting_riders + " To board : "+riders_to_board);
 
                 //A loop to get all the available riders  on board 
-                for(int i = 0; i < riders_to_board; i++){
+                for(int i = 1; i <= riders_to_board; i++){
+                    i = i - 1;
                     System.out.println("Bus " + bus_id + " released for "+i+"th rider");
                     semaphore_bus.release();  //Bus signals that it has arrived and can take a passenger on board
                     semaphore_boarded.acquire();  //Allows only one rider to get on board at a time
